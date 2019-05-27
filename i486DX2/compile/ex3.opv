@@ -1,0 +1,1 @@
+ -work ex3 -lc c:/My_Designs/ex3/library.cfg -fl c:/My_Designs/ex3/ex3/projlib.cfg -o c:/My_Designs/ex3/ex3/compile -l "ex3"

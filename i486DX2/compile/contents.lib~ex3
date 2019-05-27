@@ -1,0 +1,11 @@
+629
+~M 1 "./src/80486dx2.v" 126 PIC16C5x
+~A 1 "./src/80486dx2.v" 126 PIC16C5x
+~M 0 "" 0 $root
+~A 1 "" 0 $root
+~M 3 "./src/testbench/tb_80486dx2.v" 66 tb_80486DX2x_v
+~A 1 "./src/testbench/tb_80486dx2.v" 66 tb_80486DX2x_v
+~M 3 "./src/80486dx2.v" 126 m80486DX2
+~A 1 "./src/80486dx2.v" 126 m80486DX2
+~M 3 "./src/testbench/tb_80486dx2.v" 66 tb_PIC16C5x_v
+~A 1 "./src/testbench/tb_80486dx2.v" 66 tb_PIC16C5x_v

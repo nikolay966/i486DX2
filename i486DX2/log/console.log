@@ -1,0 +1,78 @@
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.2 [s].
+SetActiveLib -work
+# #Compiling UUT module design files
+comp -include "$DSN\src\TestBench\tb_80486DX2.v"
+# Compile...
+# Pass 1. Scanning modules hierarchy.
+# Module \$root found in current working library.
+# Module PIC16C5x found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# ELB/DAG code generating.
+# Module \$root found in current working library.
+# Unit top modules: tb_80486DX2x_v.
+# $root top modules: tb_PIC16C5x_v tb_80486DX2x_v m80486DX2.
+# Compile success 0 Errors 0 Warnings  Analysis time: 1[s].
+# done
+asim tb_80486DX2x_v
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# asim: Stack memory: 32MB
+# asim: Retval memory: 32MB
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 1772 kB (elbread=1023 elab2=469 kernel=280 sdf=0)
+#  10:10, 26 мая 2019 г.
+#  Simulation has been initialized
+#  Selected Top-Level: tb_80486DX2x_v (tb_80486DX2x_v)
+wave
+# #wave -noreg POR
+# #wave -noreg Clk
+wave -noreg ClkEn
+wave -noreg PC
+wave -noreg IR
+# #wave -noreg TRISA
+# #wave -noreg PORTA
+# #wave -noreg PA_DI
+# #wave -noreg TRISB
+# #wave -noreg PORTB
+# #wave -noreg PB_DI
+# #wave -noreg TRISC
+# #wave -noreg PORTC
+# #wave -noreg PC_DI
+# #wave -noreg MCLR
+# #wave -noreg T0CKI
+# #wave -noreg WDTE
+# #wave -noreg Err
+wave -noreg OPTION
+# #wave -noreg dIR
+wave -noreg ALU_Op
+wave -noreg KI
+wave -noreg Skip
+wave -noreg TOS
+# #wave -noreg NOS
+wave -noreg W
+wave -noreg FA
+wave -noreg DO
+wave -noreg DI
+# #wave -noreg TMR0
+wave -noreg FSR
+# #wave -noreg STATUS
+# #wave -noreg T0CKI_Pls
+# #wave -noreg WDTClr
+wave -noreg WDT
+# #wave -noreg WDT_TC
+# #wave -noreg WDT_TO
+wave -noreg PSCntr
+# #wave -noreg PSC_Pls
+run
+endsim
+# KERNEL: stopped at time: 6753661 ns
+#  Simulation has been stopped

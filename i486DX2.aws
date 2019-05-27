@@ -1,0 +1,12 @@
+[Version]
+Version=7.3
+[Designs]
+ex3=.\ex3\ex3.adf
+[Expand]
+ex3=1
+[Browser]
+sort=order
+mode=none
+[Order]
+order=1
+macro=
